@@ -1,0 +1,10 @@
+#!/bin/sh
+# This script re-applies the WOL setting to the specified network interface when it comes up
+
+# Set the network interface you want to use
+INTERFACE=""
+
+if [ "$1" = "$INTERFACE" ] && [ "$2" = "up" ]; then
+    /sbin/ethtool -s "$INTERFACE" wol ug
+    logger -t wol_dispatcher "Re-applied WOL setting on $INTERFACE via NetworkManager dispatcher."
+fi
