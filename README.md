@@ -47,6 +47,8 @@ Configure your system to suspend on idle. For example, edit `/etc/systemd/logind
     Enable Wake-on-LAN (WOL) in your BIOS/UEFI settings.
 5. **Network Interface:**
     Verify that your network interface (e.g., `eno1`) supports WOL and note its MAC address.
+6. **Wake-on-LAN phone app**: 
+    Android/IOS app that can wake up the server using MAC address.
 
 ## 1. Plex Inhibition Script
 
